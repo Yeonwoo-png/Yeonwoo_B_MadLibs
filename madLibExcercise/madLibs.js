@@ -7,20 +7,18 @@ A boolean expression (e.g., const booleanValue = timeOfDay.includes("afternoon")
 An object with properties (e.g., const person = { name: "Mike", age: 25 };).
 */
 
-const timeOfDay = "stormy night";
+const timeOfDay = " stormy night";
 const numbers = 10 - 7;
-const booleanValue = timeOfDay.includes("night");
+const booleanValue = timeOfDay.includes("stormy");
 const ghost = {
-    name: Spooky,
-    eyes: glowing,
-    body: levitating
+    name: "Spooky",
+    eyes: "glowing",
+    body: "floated"
 };
 
 // Step 1: Paste in one of the story templates above
 const story = `
-// todo
-"On a stormy night, I ventured into the haunted house. The creaking walls seemed to whisper, sending chills down my spine. Suddenly, a ghost appeared, its glowing eyes piercing through the darkness. My heart raced as it floated silently toward me. Did you know 10 - 7 equals 3? Spooky, right?"
-
+"On a ${booleanValue} ${timeOfDay}, I ventured into the haunted house. The creaking walls seemed to whisper, sending chills down my spine. Suddenly, a ghost appeared, its ${ghost.eyes} eyes piercing through the darkness. My heart raced as it ${ghost.body} silently toward me. Did you know ${numbers} equals 3? ${ghost.name}, right?"
 `;
 
 document.getElementById("madlibs-output").textContent = story;
